@@ -906,58 +906,30 @@ footer .container .social-media {
   padding-top: 20px;
 }
 
-.signup-form {
+#signup {
   padding-bottom: 90px;
 }
-.signup-form .container {
+#signup .container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 60vh;
 }
-.signup-form .container .form-box {
-  display: flex;
-  flex-direction: column;
-  padding: 25px 25px;
-  width: 50%;
+#signup .container form {
+  width: 60%;
 }
-.signup-form .container .form-box p {
-  padding-bottom: 10px;
-}
-.signup-form .container .form-box label {
-  color: #000000;
-}
-.signup-form .container .form-box .field-input1 {
+#signup .container .content .input-group {
   display: flex;
   gap: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  margin: 0px;
 }
-.signup-form .container .form-box .field-input1 input {
+#signup .container .content .input-group input {
   height: 40px;
   width: 100%;
   border: 1px solid #B4B7C9;
   border-radius: 5px;
   padding: 5px 10px;
-}
-.signup-form .container .form-box .field-input {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.signup-form .container .form-box .field-input input {
-  height: 40px;
-  width: 100%;
-  border: 1px solid #B4B7C9;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-.signup-form .container .form-box .field {
-  padding-bottom: 10px;
-}
-.signup-form .container .form-box #forget-password {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
 }
 
 .account {
