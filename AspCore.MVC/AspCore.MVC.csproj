@@ -1,0 +1,96 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="Views\Shared\Sections\_AppPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_CoursesPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_DarklightPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_FeaturesPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_FooterPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_HeaderPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_LevelPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_OverviewPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_Showcase-contactPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_ShowcasePartial.cshtml" />
+    <None Include="Views\Shared\Sections\_SigninPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_SignupPartial.cshtml" />
+    <None Include="Views\Shared\Sections\_ToolsPartial.cshtml" />
+    <None Include="wwwroot\css\scss\components\_buttons.scss" />
+    <None Include="wwwroot\css\scss\components\_links.scss" />
+    <None Include="wwwroot\css\scss\core\_base.scss" />
+    <None Include="wwwroot\css\scss\core\_colors.scss" />
+    <None Include="wwwroot\css\scss\core\_media.scss" />
+    <None Include="wwwroot\css\scss\core\_typography.scss" />
+    <None Include="wwwroot\css\scss\sections\_account.scss" />
+    <None Include="wwwroot\css\scss\sections\_app.scss" />
+    <None Include="wwwroot\css\scss\sections\_courses.scss" />
+    <None Include="wwwroot\css\scss\sections\_darklight.scss" />
+    <None Include="wwwroot\css\scss\sections\_feature.scss" />
+    <None Include="wwwroot\css\scss\sections\_footer.scss" />
+    <None Include="wwwroot\css\scss\sections\_header.scss" />
+    <None Include="wwwroot\css\scss\sections\_level.scss" />
+    <None Include="wwwroot\css\scss\sections\_overview.scss" />
+    <None Include="wwwroot\css\scss\sections\_showcase.scss" />
+    <None Include="wwwroot\css\scss\sections\_showcase_contact.scss" />
+    <None Include="wwwroot\css\scss\sections\_signin-form.scss" />
+    <None Include="wwwroot\css\scss\sections\_signup-form.scss" />
+    <None Include="wwwroot\css\scss\sections\_subscribe.scss" />
+    <None Include="wwwroot\css\scss\sections\_tools.scss" />
+    <None Include="wwwroot\images\accountpic.svg" />
+    <None Include="wwwroot\images\app-pic1.svg" />
+    <None Include="wwwroot\images\app-pic2.svg" />
+    <None Include="wwwroot\images\app.svg" />
+    <None Include="wwwroot\images\brand1.svg" />
+    <None Include="wwwroot\images\brand2.svg" />
+    <None Include="wwwroot\images\brand3.svg" />
+    <None Include="wwwroot\images\brand4.svg" />
+    <None Include="wwwroot\images\courses1.svg" />
+    <None Include="wwwroot\images\courses2.svg" />
+    <None Include="wwwroot\images\courses3.svg" />
+    <None Include="wwwroot\images\courses4.svg" />
+    <None Include="wwwroot\images\courses5.svg" />
+    <None Include="wwwroot\images\courses6.svg" />
+    <None Include="wwwroot\images\courses7.svg" />
+    <None Include="wwwroot\images\courses8.svg" />
+    <None Include="wwwroot\images\courses9.svg" />
+    <None Include="wwwroot\images\darklight.svg" />
+    <None Include="wwwroot\images\features-icon1.svg" />
+    <None Include="wwwroot\images\features-icon2.svg" />
+    <None Include="wwwroot\images\features-icon3.svg" />
+    <None Include="wwwroot\images\features-icon4.svg" />
+    <None Include="wwwroot\images\features-icon5.svg" />
+    <None Include="wwwroot\images\features-icon6.svg" />
+    <None Include="wwwroot\images\levelpic.svg" />
+    <None Include="wwwroot\images\overview.svg" />
+    <None Include="wwwroot\images\showcase-pic.svg" />
+    <None Include="wwwroot\images\silicon-logo.svg" />
+    <None Include="wwwroot\images\social1.svg" />
+    <None Include="wwwroot\images\social2.svg" />
+    <None Include="wwwroot\images\social3.svg" />
+    <None Include="wwwroot\images\social4.svg" />
+    <None Include="wwwroot\images\subscribe.svg" />
+    <None Include="wwwroot\images\toolpic3.svg" />
+    <None Include="wwwroot\images\toolpic4.svg" />
+    <None Include="wwwroot\images\toolpic5.svg" />
+    <None Include="wwwroot\images\toolpic6.svg" />
+    <None Include="wwwroot\images\toolpic7.svg" />
+    <None Include="wwwroot\images\toolpic8.svg" />
+    <None Include="wwwroot\images\toolspic1.svg" />
+    <None Include="wwwroot\images\toolspic2.svg" />
+  </ItemGroup>
+
+</Project>
