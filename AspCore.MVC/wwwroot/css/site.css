@@ -866,6 +866,7 @@ footer .container .social-media {
 
 #signin {
   height: 100%;
+  padding-bottom: 60px;
 }
 #signin .container {
   display: flex;
@@ -915,6 +916,7 @@ footer .container .social-media {
 
 #signup {
   height: 100%;
+  padding-bottom: 60px;
 }
 #signup .container {
   display: flex;
