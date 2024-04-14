@@ -984,90 +984,140 @@ footer .container .social-media {
   grid-area: button;
 }
 
-.account {
-  padding-top: 40px;
-}
-.account .container {
+#account-details {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 2fr 5fr;
   gap: 150px;
+  margin-bottom: 70px;
 }
-.account .container .profile-pic {
-  border-right: 1px solid #D4D7E5;
-  padding-right: 10px;
-  display: flex;
-  flex-direction: column;
+#account-details aside {
+  border-right: 1px solid #E2E5F1;
+  padding-right: 20px;
 }
-.account .container .profile-pic img {
-  width: 50%;
-  margin: 1px auto;
-  display: block;
-  padding-bottom: 20px;
-}
-.account .container .profile-pic p {
-  margin: 0px;
+#account-details aside .profile-info {
+  margin: 20px;
   text-align: center;
 }
-.account .container .profile-pic .btn-theme {
-  padding: 12px 70px;
-  margin-top: 20px;
+#account-details aside .profile-info h5 {
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
-.account .container .profile-pic .logout {
-  padding-top: 10px;
-  padding-left: 13px;
-  text-decoration: none;
+#account-details aside .profile-info p {
+  line-height: 160%;
+  font-weight: 400;
   color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px !important;
 }
-.account .container .account-details {
-  display: flex;
-  flex-direction: column;
+#account-details aside nav {
+  margin-top: 50px;
+  text-align: left;
 }
-.account .container .account-details p {
-  color: #4C82F7;
+#account-details aside nav a {
+  margin: 10px 0;
+  text-align: center;
+  justify-content: flex-start;
 }
-.account .container .account-details .form .colum {
-  display: flex;
-  gap: 20px;
+#account-details aside nav .btn-theme-s {
+  text-align: left;
+  justify-content: flex-start;
 }
-.account .container .account-details .form .detail-boxes {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  width: 50%;
+#account-details .details {
+  margin-top: 50px;
+  width: 100%;
 }
-.account .container .account-details .form .detail-boxes input {
+#account-details .details .basic-info form {
+  padding: 1rem;
+}
+#account-details .details .basic-info form h5 {
+  color: #6366F1;
+}
+#account-details .details .basic-info form .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  grid-template-areas: "firstname lastname" "email phone" "bio bio" "buttons buttons";
+}
+#account-details .details .basic-info form .content input {
   height: 40px;
   width: 100%;
   border: 1px solid #B4B7C9;
   border-radius: 5px;
   padding: 5px 10px;
 }
-.account .container .account-details .form .detail-boxes-bio input {
+#account-details .details .basic-info form #form-firstname {
+  grid-area: firstname;
+}
+#account-details .details .basic-info form #form-lastname {
+  grid-area: lastname;
+}
+#account-details .details .basic-info form #form-email {
+  grid-area: email;
+}
+#account-details .details .basic-info form #form-phone {
+  grid-area: phone;
+}
+#account-details .details .basic-info form #form-bio {
+  grid-area: bio;
+}
+#account-details .details .basic-info form #form-bio textarea {
   height: 100px;
   width: 100%;
   border: 1px solid #B4B7C9;
   border-radius: 5px;
   padding: 5px 10px;
 }
-.account .container .account-details .form .detail-boxes-address {
-  padding-bottom: 20px;
+#account-details .details .basic-info form #form-bio span {
+  color: #B4B7C9;
+  font-weight: 400;
 }
-.account .container .account-details .form .detail-boxes-address input {
+#account-details .details .basic-info form .form-buttons {
+  grid-area: buttons;
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+#account-details .details .address-info {
+  margin-top: 30px;
+}
+#account-details .details .address-info form {
+  padding: 1rem;
+}
+#account-details .details .address-info form h5 {
+  color: #6366F1;
+}
+#account-details .details .address-info form .content {
+  display: grid;
+  gap: 1rem 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "addressline_1 addressline_1 " "addressline_2 addressline_2" "postalcode city" "buttons buttons";
+}
+#account-details .details .address-info form .content input {
   height: 40px;
   width: 100%;
   border: 1px solid #B4B7C9;
   border-radius: 5px;
   padding: 5px 10px;
 }
-.account .container .account-details .form .button {
-  display: flex;
-  gap: 20px;
-  padding: 30px 0px;
-  border-bottom: 1px solid #D4D7E5;
+#account-details .details .address-info form .content #form-addressline-1 {
+  grid-area: addressline_1;
 }
-.account .container .account-details .form .button1 {
+#account-details .details .address-info form .content #form-addressline-2 {
+  grid-area: addressline_2;
+}
+#account-details .details .address-info form .content #form-addressline-2 span {
+  color: #B4B7C9;
+  font-weight: 400;
+}
+#account-details .details .address-info form .content #form-postalcode {
+  grid-area: postalcode;
+}
+#account-details .details .address-info form .content #form-city {
+  grid-area: city;
+}
+#account-details .details .address-info form .content .form-buttons {
+  grid-area: buttons;
+  margin: 20px 0;
   display: flex;
   gap: 20px;
-  padding-bottom: 100px;
-  padding-top: 30px;
 }

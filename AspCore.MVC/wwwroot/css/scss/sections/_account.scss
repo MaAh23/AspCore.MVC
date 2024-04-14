@@ -1,62 +1,64 @@
-.account{
-    padding-top: 40px;
-    .container{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap:150px;
+#account-details {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 150px;
+    margin-bottom: 70px;
 
-        .profile-pic{
-            border-right: 1px solid $gray-400;
-            padding-right: 10px;
-            display: flex;
-            flex-direction: column;
+    aside {
+        border-right: 1px solid $gray-300;
+        padding-right: 20px;
 
-            img{
-                width: 50%;
-                margin: 1px auto;
-                display: block;
-                padding-bottom: 20px;
+        .profile-info {
+            margin: 20px;
+            text-align: center;
+
+            h5 {
+                margin-top: 15px;
+                margin-bottom: 0px
             }
 
-            p{
-                margin: 0px;
-                text-align: center;
-            }
-
-            .btn-theme{
-                padding: 12px 70px;
-                margin-top: 20px;
-            }
-
-            .logout{
-                padding-top: 10px;
-                padding-left: 13px;
-                text-decoration: none;
-                color: $gray-700;
+            p {
+                @include text-m;
             }
         }
 
-        .account-details{
-            display: flex;
-            flex-direction: column;
-            
-            p{
-                color: $info;
+        nav {
+            margin-top: 50px;
+            text-align: left;
+
+            a {
+                margin: 10px 0;
+                text-align: center;
+                justify-content: flex-start;
             }
 
-            .form{
-                .colum{
-                    display: flex;
-                    gap: 20px;
+            .btn-theme-s {
+                text-align: left;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .details {
+        margin-top: 50px;
+        width: 100%;
+
+        .basic-info {
+
+            form {
+                padding: 1rem;
+
+                h5 {
+                    color: $theme;
                 }
-    
-                .detail-boxes{
-                    display: flex;
-                    flex-direction: column;
-                    margin-bottom: 20px;
-                    width: 50%;
-    
-                    input{
+
+                .content {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem 2rem;
+                    grid-template-areas: "firstname lastname" "email phone" "bio bio" "buttons buttons";
+
+                    input {
                         height: 40px;
                         width: 100%;
                         border: 1px solid $gray-500;
@@ -65,41 +67,101 @@
                     }
                 }
 
-                .detail-boxes-bio{
-                    
-                    input{
+                #form-firstname {
+                    grid-area: firstname;
+                }
+
+                #form-lastname {
+                    grid-area: lastname;
+                }
+
+                #form-email {
+                    grid-area: email;
+                }
+
+                #form-phone {
+                    grid-area: phone;
+                }
+
+                #form-bio {
+                    grid-area: bio;
+
+                    textarea {
                         height: 100px;
                         width: 100%;
                         border: 1px solid $gray-500;
                         border-radius: 5px;
                         padding: 5px 10px;
                     }
+
+                    span {
+                        color: $gray-500;
+                        font-weight: 400;
+                    }
                 }
-                .detail-boxes-address{
-                    padding-bottom: 20px;
-                    input{
+
+                .form-buttons {
+                    grid-area: buttons;
+                    margin: 20px 0;
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+        }
+
+        .address-info {
+            margin-top: 30px;
+
+            form {
+                padding: 1rem;
+
+                h5 {
+                    color: $theme;
+                }
+
+                .content {
+                    display: grid;
+                    gap: 1rem 2rem;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: "addressline_1 addressline_1 " "addressline_2 addressline_2" "postalcode city" "buttons buttons";
+
+                    input {
                         height: 40px;
                         width: 100%;
                         border: 1px solid $gray-500;
                         border-radius: 5px;
                         padding: 5px 10px;
                     }
-                }
-                .button{
-                    display: flex;
-                    gap: 20px;
-                    padding: 30px 0px;
-                    border-bottom: 1px solid $gray-400;
-                }
 
-                .button1{
-                    display: flex;
-                    gap: 20px;
-                    padding-bottom: 100px;
-                    padding-top: 30px;
+                    #form-addressline-1 {
+                        grid-area: addressline_1;
+                    }
+
+                    #form-addressline-2 {
+                        grid-area: addressline_2;
+
+                        span {
+                            color: $gray-500;
+                            font-weight: 400;
+                        }
+                    }
+
+                    #form-postalcode {
+                        grid-area: postalcode;
+                    }
+
+                    #form-city {
+                        grid-area: city;
+                    }
+
+                    .form-buttons {
+                        grid-area: buttons;
+                        margin: 20px 0;
+                        display: flex;
+                        gap: 20px;
+                    }
                 }
             }
         }
-
     }
 }
