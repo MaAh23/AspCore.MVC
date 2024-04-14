@@ -20,9 +20,9 @@ public class AuthController : Controller
     public IActionResult SignUp(SignUpViewModel viewModel)
 
     {
-       if (ModelState.IsValid) 
+      
             return View(viewModel);
 
-        return RedirectToAction("SignIn" ,"Auth");
+        
     }
 }

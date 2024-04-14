@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AspCore.MVC.Helpers;
+using System.ComponentModel.DataAnnotations;
 
 namespace AspCore.MVC.Models;
 
@@ -18,20 +19,23 @@ public class SignUpModel
 
     [Display(Name = "Email address ", Prompt = "Enter your email address", Order = 2)]
     [DataType(DataType.EmailAddress)]
-    [RegularExpression("^[^@\\s]+@[^@\\s] + \\.[^@\\s]{2,}$", ErrorMessage = "Invalid email address")]
+    [Required(ErrorMessage = "Invalid email address")]
+    
 
     public string Email { get; set; } = null!;
 
     
     [Display(Name = "Password", Prompt = "Enter your password", Order = 3)]
     [DataType(DataType.Password)]
-    [RegularExpression("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[\\W_]).{8,}$" , ErrorMessage = "Invalid password")]
+    [Required(ErrorMessage = "Invalid password")]
+    
 
     public string Password { get; set; } = null!;
 
 
     [Display(Name = "Confirm password", Prompt = "Confirm yuor passsword", Order = 4)]
     [DataType(DataType.Password)]
+    [Required(ErrorMessage = "Password must be confirmd")]
     [Compare(nameof(Password), ErrorMessage ="Password does not match ")]
 
     public string ConfirmPassword { get; set; } = null!;
@@ -39,10 +43,12 @@ public class SignUpModel
 
 
     [Display(Name = "I agree to the Terms and Conditions", Order = 5)]
-    [Required(ErrorMessage = "Invalid last name")]
+    [CheckBoxRequired(ErrorMessage = "You must accept the terms and conditions to proceed.")]
 
     public bool TersmAndConditions { get; set; } = false;
 
 
 
 }
+
+

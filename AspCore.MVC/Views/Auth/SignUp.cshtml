@@ -5,7 +5,7 @@
 
 <section id="signup">
     <div class="container">
-        <form method="post" asp-controller="Auth" asp-action="SignUp">
+        <form method="post" asp-controller="Auth" asp-action="SignUp" novalidate>
             <h1>Create Account</h1>
             <p>Alredy have a account? <a asp-controller="Auth" asp-action="SignIn">Sign in here</a> </p>
 
@@ -41,7 +41,7 @@
                     <span asp-validation-for="Form.TersmAndConditions"></span>
                 </div>
             </div>
-            <button class="btn-theme-s" type="submit">@Model.Title</button>
+            <button id="form-submit" class="btn-theme-s" type="submit">@Model.Title</button>
         </form>
 
     </div>
