@@ -864,46 +864,53 @@ footer .container .social-media {
   color: #4C82F7;
 }
 
-.signin-form {
-  padding-bottom: 90px;
+#signin {
+  height: 100%;
 }
-.signin-form .container {
+#signin .container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  align-items: center;
+  height: 100%;
 }
-.signin-form .container .form-box {
-  display: flex;
-  flex-direction: column;
-  padding: 25px 25px;
+#signin .container form {
+  padding: 1rem;
   width: 50%;
 }
-.signin-form .container .form-box p {
-  padding-bottom: 10px;
+#signin .container form .content {
+  display: grid;
+  gap: 1rem 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "email" "password" "remember" "button" "forgot";
 }
-.signin-form .container .form-box label {
-  color: #000000;
-}
-.signin-form .container .form-box .field-input {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.signin-form .container .form-box .field-input input {
+#signin .container form .content .input-group input {
   height: 40px;
   width: 100%;
   border: 1px solid #B4B7C9;
   border-radius: 5px;
   padding: 5px 10px;
 }
-.signin-form .container .form-box .field {
-  padding-bottom: 10px;
+#signin .container form .content label {
+  padding-right: 20px;
 }
-.signin-form .container .form-box #forget-password {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
+#signin .container form .content #form-email {
+  grid-area: email;
+}
+#signin .container form .content #form-password {
+  grid-area: password;
+}
+#signin .container form .content #form-remember {
+  grid-area: remember;
+  padding: 1rem 0;
+}
+#signin .container form .content #form-button {
+  grid-area: button;
+}
+#signin .container form .content #form-forgot-password {
+  width: 100%;
+  grid-area: forgot;
+  margin: 1rem 0 0 0;
+  text-align: center;
 }
 
 #signup {
@@ -938,9 +945,6 @@ footer .container .social-media {
   grid-template-columns: 1fr;
   grid-template-areas: "firstname" "lastname" "email" "password" "confirm" "terms" "button";
 }
-#signup .container .content .input-group validator-error {
-  color: #EF4444;
-}
 #signup .container .content .input-group input {
   height: 40px;
   width: 100%;
@@ -950,9 +954,6 @@ footer .container .social-media {
 }
 #signup .container .content label {
   padding-right: 20px;
-}
-#signup .container .content .checkbox-group {
-  padding: 1px 1px;
 }
 @media (min-width: 768px) {
   #signup .container .content {

@@ -1,52 +1,68 @@
-.signin-form{
-   padding-bottom: 90px;
+#signin {
+    height: 100%;
 
-    .container{
+    .container {
         display: flex;
-        align-items: center;
         justify-content: center;
-        min-height: 60vh;
+        align-items: center;
+        height: 100%;
 
-        .form-box{
-            display: flex;
-            flex-direction: column;
-            padding: 25px 25px;
+
+
+
+
+
+        form {
+            padding: 1rem;
             width: 50%;
-           
-            p{
-                padding-bottom: 10px;
-            }
 
-            label{
-                color: $black;
-             }
+            .content {
+                display: grid;
+                gap: 1rem 2rem;
+                grid-template-columns: 1fr;
+                grid-template-areas: "email" "password" "remember" "button" "forgot";
 
-            .field-input{
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 20px;
-            
+                .input-group {
 
-                input{
-                    height: 40px;
+
+                    input {
+                        height: 40px;
+                        width: 100%;
+                        border: 1px solid $gray-500;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                    }
+                }
+
+                label {
+                    padding-right: 20px;
+                }
+
+                #form-email {
+                    grid-area: email;
+                }
+
+                #form-password {
+                    grid-area: password;
+                }
+
+                #form-remember {
+                    grid-area: remember;
+                    padding: 1rem 0;
+                }
+
+                #form-button {
+                    grid-area: button;
+                }
+
+                #form-forgot-password {
+                    
                     width: 100%;
-                    border: 1px solid $gray-500;
-                    border-radius: 5px;
-                    padding: 5px 10px;
+                    grid-area: forgot;
+                    margin: 1rem 0 0 0;
+                    text-align: center;
                 }
             }
-            .field{
-                padding-bottom: 10px;
-            }
-
-            #forget-password{
-                display: flex;
-                justify-content: center;
-                padding-top: 20px;
-                
-            }
-           
         }
-
     }
 }
