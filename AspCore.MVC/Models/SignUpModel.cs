@@ -5,14 +5,18 @@ namespace AspCore.MVC.Models;
 
 public class SignUpModel
 {
+
+    [DataType(DataType.Text)]
     [Display(Name = "First name" , Prompt ="Enter your first name", Order = 0)]
     [Required(ErrorMessage = "Invalid first name")]
+    [MinLength(2)]
 
     public string Firstname { get; set; } = null!;
 
-    
+    [DataType(DataType.Text)]
     [Display(Name = "Last name", Prompt = "Enter your last name", Order = 1)]
     [Required(ErrorMessage = "Invalid last name")]
+    [MinLength(2)]
 
     public string Lastname { get; set; } = null!;
 
@@ -35,7 +39,7 @@ public class SignUpModel
 
     [Display(Name = "Confirm password", Prompt = "Confirm yuor passsword", Order = 4)]
     [DataType(DataType.Password)]
-    [Required(ErrorMessage = "Password must be confirmd")]
+    [Required(ErrorMessage = "Password must be confirmed")]
     [Compare(nameof(Password), ErrorMessage ="Password does not match ")]
 
     public string ConfirmPassword { get; set; } = null!;

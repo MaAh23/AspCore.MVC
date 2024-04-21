@@ -370,21 +370,21 @@ header .container {
     grid-template-areas: "logo menu switch buttons";
   }
 }
-header .container #logo {
+header .container .logo {
   grid-area: logo;
 }
-header .container #menu {
+header .container .menu {
   grid-area: menu;
   display: none;
 }
 @media (min-width: 992px) {
-  header .container #menu {
+  header .container .menu {
     display: block;
   }
 }
-header .container #menu nav {
+header .container .menu nav {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 header .container .btn-switch {
   grid-area: switch;
